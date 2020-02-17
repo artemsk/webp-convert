@@ -18,7 +18,7 @@ class Sanitize
 
     public static function removeStreamWrappers($string)
     {
-        return preg_replace('#^\\w+://#', '', $string);
+        return $string; //preg_replace('#^\\w+://#', '', $string);
     }
 
     public static function path($string)

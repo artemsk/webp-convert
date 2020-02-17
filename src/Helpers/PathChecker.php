@@ -56,9 +56,9 @@ class PathChecker
 
         // Prevent stream wrappers ("phar://", "php://" and the like)
         // https://www.php.net/manual/en/wrappers.phar.php
-        if (preg_match('#^\\w+://#', $absFilePath)) {
-            throw new InvalidInputException('Stream wrappers are not allowed in ' . $text . ' path');
-        }
+        //if (preg_match('#^\\w+://#', $absFilePath)) {
+        //    throw new InvalidInputException('Stream wrappers are not allowed in ' . $text . ' path');
+        //}
     }
 
     public static function checkAbsolutePathAndExists($absFilePath, $text = 'file')
